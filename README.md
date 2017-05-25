@@ -34,6 +34,7 @@ aws s3 sync s3://bucketTest/vhosts/ /var/www/vhosts/
 
 #### Recover backup at certain version
 
+* Download `aws.phar` from http://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar
 * Edit file `awsRecover.php`
 ```php
 $refTimestamp = 1452816000;  // Set recover version date - http://www.unixtimestamp.com/index.php
